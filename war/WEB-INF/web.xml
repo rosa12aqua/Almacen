@@ -4,15 +4,86 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
 	<servlet>
-		<servlet-name>TrabajoFinal</servlet-name>
-		<servlet-class>epis.unsa.TrabajoFinalServlet</servlet-class>
+		<servlet-name>RelacionTrabajador</servlet-name>
+		<servlet-class>epis.unsa.RelacionTrabajador</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>TrabajoFinal</servlet-name>
-		<url-pattern>/trabajofinal</url-pattern>
+		<servlet-name>RelacionTrabajador</servlet-name>
+		<url-pattern>/relacionTrabajador</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegistroTrabajador</servlet-name>
+		<servlet-class>epis.unsa.servlets.RegistroTrabajador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroTrabajador</servlet-name>
+		<url-pattern>/registroTrabajador</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegistroTrabajador1</servlet-name>
+		<servlet-class>epis.unsa.servlets.RegistroTrabajador1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroTrabajador1</servlet-name>
+		<url-pattern>/registroTrabajador1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EliminarTrabajador</servlet-name>
+		<servlet-class>epis.unsa.EliminarTrabajador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarTrabajador</servlet-name>
+		<url-pattern>/eliminarTrabajador</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ModificarId</servlet-name>
+		<servlet-class>epis.unsa.ModificarId</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarId</servlet-name>
+		<url-pattern>/modificarId</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
-		<welcome-file>vista1.jsp</welcome-file>
+		<welcome-file>registroAlumnos.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>RelacionProductos</servlet-name>
+		<servlet-class>epis.unsa.RelacionProductos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RelacionProductos</servlet-name>
+		<url-pattern>/relacionProductos</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegistrarProductos</servlet-name>
+		<servlet-class>epis.unsa.RegistrarProductos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrarProductos</servlet-name>
+		<url-pattern>/registrarProductos</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EliminarProductos</servlet-name>
+		<servlet-class>epis.unsa.EliminarProductos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarProductos</servlet-name>
+		<url-pattern>/eliminarProductos</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ModificarProductos</servlet-name>
+		<servlet-class>epis.unsa.ModificarProductos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarProductos</servlet-name>
+		<url-pattern>/modificarProductos</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 </web-app>
